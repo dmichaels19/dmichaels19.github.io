@@ -192,11 +192,6 @@ a:focus {
   height: 100%;
   display: table;
   width: 100%;
-  border: 1px solid purple;
-}
-.col-sm-6,
-.col-sm-4 {
-  border: 1px solid blue;
 }
 .col-sm-4 {
   height: 300px;
@@ -204,7 +199,6 @@ a:focus {
 .content-body {
   display: table-cell;
   vertical-align: middle;
-  border: 1px solid red;
 }
 .white-section {
   background-color: white;
