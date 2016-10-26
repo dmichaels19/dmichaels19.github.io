@@ -7,7 +7,7 @@ body {
   width: 100%;
   height: 100%;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333333;
+  color: #767676;
   background-attachment: fixed;
   background-color: #EEEEEE;
 }
@@ -36,7 +36,7 @@ p {
   }
 }
 a {
-  color: #333333;
+  color: #303037;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -44,20 +44,21 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #000000;
+  color: #000001;
 }
 .light {
   font-weight: 400;
 }
 .navbar-custom {
   margin-bottom: 0;
+  border-bottom: none;
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: transparent;
 }
 .navbar-custom .navbar-toggle {
   color: white;
-  background-color: #F47321;
+  background-color: #303037;
   font-size: 12px;
 }
 .navbar-custom .navbar-toggle:focus,
@@ -74,14 +75,9 @@ a:focus {
 .navbar-custom a {
   color: white;
 }
-@media (min-width: 768px) {
-  .navbar-custom a {
-    color: #F47321;
-  }
-}
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .navbar-custom .nav {
-    background-color: #F47321;
+    background-color: #303037;
   }
 }
 @media (min-width: 768px) {
@@ -125,8 +121,7 @@ a:focus {
   }
   .navbar-custom.top-nav-collapse {
     padding: 0;
-    background: #F47321;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background: #303037;
   }
   .navbar-custom.top-nav-collapse a {
     color: white;
@@ -135,10 +130,11 @@ a:focus {
 .intro {
   display: table;
   width: 100%;
+  height: 100%;
   padding: 100px 0;
   text-align: center;
-  color: #333333;
-  background-color: #EEEEEE;
+  color: white;
+  background: url("../img/intro-bg.gif") center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -149,7 +145,7 @@ a:focus {
   vertical-align: middle;
 }
 .intro .intro-body .brand-heading {
-  font-size: 40px;
+  font-size: 120px;
 }
 @media (min-width: 768px) {
   .intro {
@@ -192,6 +188,22 @@ a:focus {
   height: 100%;
   display: table;
   width: 100%;
+  font-size: 18px;
+  text-align: justify;
+}
+.content-section h1,
+.content-section h2,
+.content-section h3,
+.content-section h4,
+.content-section h5,
+.content-section h6 {
+  font-size: 40px;
+  color: black;
+}
+@media (max-width: 767px) {
+  .content-section {
+    text-align: center;
+  }
 }
 .col-sm-4 {
   height: 300px;
@@ -200,8 +212,86 @@ a:focus {
   display: table-cell;
   vertical-align: middle;
 }
+.content-body img {
+  display: none;
+  height: 1px;
+  width: 1px;
+}
+@media (max-width: 767px) {
+  .content-body {
+    padding: 50px 25px 0px;
+  }
+  .content-body p {
+    text-align: left;
+  }
+  .content-body img {
+    display: none;
+    height: 1px;
+    width: 1px;
+  }
+}
 .white-section {
   background-color: white;
+}
+.green-section {
+  background-color: #005030;
+  color: white;
+}
+.green-section h2 {
+  color: white;
+}
+.green-section a {
+  color: #F47321;
+}
+.green-section a:hover {
+  color: rgba(255, 255, 255, 0.8);
+  outline: none;
+  background-color: transparent;
+}
+.green-section a:focus,
+.green-section a:active {
+  outline: none;
+  background-color: transparent;
+}
+.orange-section {
+  background-color: #F47321;
+  color: white;
+}
+.orange-section h2 {
+  color: black;
+}
+.orange-section a {
+  color: white;
+}
+.orange-section a:hover {
+  color: rgba(255, 255, 255, 0.8);
+  outline: none;
+  background-color: transparent;
+}
+.orange-section a:focus,
+.orange-section a:active {
+  outline: none;
+  background-color: transparent;
+}
+.black-section {
+  background-color: #111111;
+  color: #DDDDDD;
+}
+.black-section h2 {
+  color: white;
+}
+.black-section a {
+  color: #F47321;
+}
+.black-section a:hover {
+  color: rgba(255, 255, 255, 0.8);
+  outline: none;
+  background-color: transparent;
+}
+.black-section a:focus,
+.black-section a:active {
+  outline: none;
+  background-color: transparent;
 }
 .download-section {
   width: 100%;
@@ -218,7 +308,7 @@ a:focus {
   height: 200px;
   margin-top: 100px;
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .content-section {
     padding: 100px 0;
   }
@@ -230,6 +320,9 @@ a:focus {
     margin-top: 250px;
   }
 }
+@media (max-width: 767px) {
+  height: auto;
+}
 .btn {
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -240,16 +333,16 @@ a:focus {
   border-radius: 0;
 }
 .btn-default {
-  border: 1px solid #333333;
-  color: #333333;
-  background-color: transparent;
+  border: 1px solid #F47321;
+  color: white;
+  background-color: #F47321;
 }
 .btn-default:hover,
 .btn-default:focus {
-  border: 1px solid #333333;
+  border: 1px solid #303037;
   outline: none;
   color: white;
-  background-color: #333333;
+  background-color: #303037;
 }
 ul.banner-social-buttons {
   margin-top: 0;
@@ -294,7 +387,7 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .navbar .navbar-nav {
     display: inline-block;
     float: none;

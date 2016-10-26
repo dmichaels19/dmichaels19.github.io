@@ -10,7 +10,10 @@ body {
     background-attachment: fixed;
     background-color: @bg_grey;
 }
+.col-sm-4 {
+    //background: url(../img/bg.jpg);
 
+}
 html {
     width: 100%;
     height: 100%;
@@ -58,14 +61,14 @@ a {
 
 .navbar-custom {
     margin-bottom: 0;
-    //border-bottom: 1px solid fade(white, 30%);
+    border-bottom: none;
     text-transform: uppercase;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: transparent;
     .navbar-toggle { //this is the toggle
       //border: 2px solid green;
         color: white;
-        background-color: @miami_orange;
+        background-color: @primary;
         font-size: 12px;
         &:focus,
         &:active {
@@ -81,13 +84,13 @@ a {
     }
     a {
         color: white;
-        @media(min-width:768px) {
-          color: @miami_orange;
-        }
+        // @media(min-width:768px) {
+        //   color: @miami_orange;
+        // }
     }
     .nav {
-      @media(max-width:768px) {
-        background-color:@miami_orange;
+      @media(max-width:767px) {
+        background-color:@primary;
       }
         @media(min-width:768px) {
           margin-bottom:-6px;
@@ -129,8 +132,8 @@ a {
         transition: background .5s ease-in-out,padding .5s ease-in-out;
         &.top-nav-collapse {
             padding: 0;
-            background: @miami_orange;
-            border-bottom: 1px solid fade(white, 30%);
+            background: @primary;
+            //border-bottom: 1px solid fade(white, 30%);
             a {
               color: white;
             }
@@ -141,11 +144,12 @@ a {
 .intro {
     display: table;
     width: 100%;
-    //height: auto;
+    height: 100%;
     padding: 100px 0;
     text-align: center;
-    color: @text_grey;
-    background-color: @bg_grey;
+    color: white;
+    background: url("../img/intro-bg.gif") center no-repeat;
+    //background-color: @bg_grey;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -154,7 +158,7 @@ a {
         display: table-cell;
         vertical-align: middle;
         .brand-heading {
-            font-size: 40px;
+            font-size: 120px;
         }
         // .intro-text {
         //     font-size: 18px;
@@ -248,10 +252,21 @@ a {
 }
 
 .content-section {
+  h1, h2, h3, h4, h5, h6 {
+    font-size:40px;
+    color: black;
+  }
   height: 100%;
   display: table;
   width:100%;
+  @media(max-width:767px) {
+    text-align:center;
+
+  }
+  font-size: 18px;
+  text-align: justify;
 }
+
 
 .col-sm-4 {
   height: 300px;
@@ -259,9 +274,96 @@ a {
 .content-body {
   display: table-cell;
   vertical-align: middle;
+  img {
+    display: none;
+    height: 1px;
+    width: 1px;
+  }
+  @media(max-width:767px) {
+    p {
+      text-align:left;
+      //padding-bottom:30px;
+    }
+    img {
+      display: none;
+      height: 1px;
+      width: 1px;
+    }
+    padding: 50px 25px 0px;
+  }
+
 }
 .white-section {
   background-color:white;
+}
+.green-section {
+  background-color:@miami_green;
+  h2 {
+    color:white;
+  }
+  color:white;
+  a {
+      color:@miami_orange;
+      // -webkit-transition: background .3s ease-in-out;
+      // -moz-transition: background .3s ease-in-out;
+      // transition: background .3s ease-in-out;
+      &:hover {
+          color: fade(white, 80%);
+          outline: none;
+          background-color: transparent;
+      }
+      &:focus,
+      &:active {
+          outline: none;
+          background-color: transparent;
+      }
+  }
+}
+.orange-section {
+  background-color:@miami_orange;
+  h2 {
+    color:black;
+  }
+  color:white;
+  a {
+      color:white;
+      // -webkit-transition: background .3s ease-in-out;
+      // -moz-transition: background .3s ease-in-out;
+      // transition: background .3s ease-in-out;
+      &:hover {
+          color: fade(white, 80%);
+          outline: none;
+          background-color: transparent;
+      }
+      &:focus,
+      &:active {
+          outline: none;
+          background-color: transparent;
+      }
+  }
+}
+.black-section {
+  background-color:#111111;
+  h2 {
+    color:white;
+  }
+  color:#DDDDDD;
+  a {
+      color:@miami_orange;
+      // -webkit-transition: background .3s ease-in-out;
+      // -moz-transition: background .3s ease-in-out;
+      // transition: background .3s ease-in-out;
+      &:hover {
+          color: fade(white, 80%);
+          outline: none;
+          background-color: transparent;
+      }
+      &:focus,
+      &:active {
+          outline: none;
+          background-color: transparent;
+      }
+  }
 }
 
 .download-section {
@@ -281,7 +383,7 @@ a {
     margin-top: 100px;
 }
 
-@media(min-width:767px) {
+@media(min-width:768px) {
     .content-section {
         padding: 100px 0;
         //background-color: orange;
@@ -297,7 +399,9 @@ a {
         margin-top: 250px;
     }
 }
-
+@media(max-width:767px) {
+  height:auto;
+}
 .btn {
     text-transform: uppercase;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -309,9 +413,9 @@ a {
 }
 
 .btn-default {
-    border: 1px solid @primary;
-    color: @primary;
-    background-color: transparent;
+    border: 1px solid @miami_orange;
+    color: white;
+    background-color: @miami_orange;
     &:hover,
     &:focus {
         border: 1px solid @primary;
@@ -381,7 +485,7 @@ body {
 //   border: 3px solid purple;
 // }
 
-@media(min-width:767px) {
+@media(min-width:768px) {
   .navbar .navbar-nav {
       display: inline-block;
       float: none;
