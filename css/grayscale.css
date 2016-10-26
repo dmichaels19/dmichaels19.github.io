@@ -145,7 +145,7 @@ a:focus {
   vertical-align: middle;
 }
 .intro .intro-body .brand-heading {
-  font-size: 120px;
+  font-size: 65px;
 }
 @media (min-width: 768px) {
   .intro {
@@ -205,8 +205,10 @@ a:focus {
     text-align: center;
   }
 }
-#contact h2 {
-  font-size: 80px;
+@media (min-width: 768px) {
+  #contact h2 {
+    font-size: 80px;
+  }
 }
 .col-sm-4 {
   height: 300px;

@@ -157,12 +157,12 @@ a {
     .intro-body {
         display: table-cell;
         vertical-align: middle;
-        .brand-heading {
-            font-size: 120px;
-        }
         // .intro-text {
         //     font-size: 18px;
         // }
+        .brand-heading {
+            font-size: 65px;
+        }
     }
     @media(min-width:768px) {
         height: 100%;
@@ -268,8 +268,10 @@ a {
 }
 
 #contact {
-  h2 {
+  @media(min-width:768px){
+    h2 {
     font-size:80px;
+    }
   }
 }
 .col-sm-4 {
@@ -546,5 +548,5 @@ body {
   height: 200px;
 }
 footer {
-  background-color:darken(@primary,8%); 
+  background-color:darken(@primary,8%);
 }
