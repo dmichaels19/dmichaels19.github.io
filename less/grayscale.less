@@ -267,28 +267,32 @@ a {
   text-align: justify;
 }
 
-
+#contact {
+  h2 {
+    font-size:80px;
+  }
+}
 .col-sm-4 {
   height: 300px;
 }
 .content-body {
   display: table-cell;
   vertical-align: middle;
-  img {
-    display: none;
-    height: 1px;
-    width: 1px;
-  }
+  // img {
+  //   display: none;
+  //   height: 1px;
+  //   width: 1px;
+  // }
   @media(max-width:767px) {
     p {
       text-align:left;
       //padding-bottom:30px;
     }
-    img {
-      display: none;
-      height: 1px;
-      width: 1px;
-    }
+    // img {
+    //   display: none;
+    //   height: 1px;
+    //   width: 1px;
+    // }
     padding: 50px 25px 0px;
   }
 
@@ -318,6 +322,29 @@ a {
           background-color: transparent;
       }
   }
+}
+#contact {
+  background-color:@miami_green;
+  h2 {
+    color:white;
+  }
+  color:white;
+  // a {
+  //     color:@miami_orange;
+  //     // -webkit-transition: background .3s ease-in-out;
+  //     // -moz-transition: background .3s ease-in-out;
+  //     // transition: background .3s ease-in-out;
+  //     &:hover {
+  //         color: fade(white, 80%);
+  //         outline: none;
+  //         background-color: transparent;
+  //     }
+  //     &:focus,
+  //     &:active {
+  //         outline: none;
+  //         background-color: transparent;
+  //     }
+  // }
 }
 .orange-section {
   background-color:@miami_orange;
@@ -402,6 +429,15 @@ a {
 @media(max-width:767px) {
   height:auto;
 }
+.persondiv {
+    height:340px;
+    h4 {
+      font-size:18px;
+      small {
+        font-size: 16px;
+      }
+    }
+}
 .btn {
     text-transform: uppercase;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -426,11 +462,13 @@ a {
 }
 
 ul.banner-social-buttons {
+  color: white;
     margin-top: 0;
     @media(max-width:1199px) {
         margin-top: 15px;
     }
     @media(max-width:767px) {
+      color: white;
         li {
             display: block;
             margin-bottom: 20px;
@@ -506,4 +544,7 @@ body {
 .body-photo {
   width: 200px;
   height: 200px;
+}
+footer {
+  background-color:darken(@primary,8%); 
 }

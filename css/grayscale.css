@@ -205,6 +205,9 @@ a:focus {
     text-align: center;
   }
 }
+#contact h2 {
+  font-size: 80px;
+}
 .col-sm-4 {
   height: 300px;
 }
@@ -212,22 +215,12 @@ a:focus {
   display: table-cell;
   vertical-align: middle;
 }
-.content-body img {
-  display: none;
-  height: 1px;
-  width: 1px;
-}
 @media (max-width: 767px) {
   .content-body {
     padding: 50px 25px 0px;
   }
   .content-body p {
     text-align: left;
-  }
-  .content-body img {
-    display: none;
-    height: 1px;
-    width: 1px;
   }
 }
 .white-section {
@@ -252,6 +245,13 @@ a:focus {
 .green-section a:active {
   outline: none;
   background-color: transparent;
+}
+#contact {
+  background-color: #005030;
+  color: white;
+}
+#contact h2 {
+  color: white;
 }
 .orange-section {
   background-color: #F47321;
@@ -323,6 +323,15 @@ a:focus {
 @media (max-width: 767px) {
   height: auto;
 }
+.persondiv {
+  height: 340px;
+}
+.persondiv h4 {
+  font-size: 18px;
+}
+.persondiv h4 small {
+  font-size: 16px;
+}
 .btn {
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -345,6 +354,7 @@ a:focus {
   background-color: #303037;
 }
 ul.banner-social-buttons {
+  color: white;
   margin-top: 0;
 }
 @media (max-width: 1199px) {
@@ -353,6 +363,9 @@ ul.banner-social-buttons {
   }
 }
 @media (max-width: 767px) {
+  ul.banner-social-buttons {
+    color: white;
+  }
   ul.banner-social-buttons li {
     display: block;
     margin-bottom: 20px;
@@ -406,4 +419,7 @@ body {
 .body-photo {
   width: 200px;
   height: 200px;
+}
+footer {
+  background-color: #1d1d21;
 }
