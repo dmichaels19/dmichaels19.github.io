@@ -203,9 +203,6 @@ a:focus {
 @media (max-width: 767px) {
   .content-section {
     text-align: center;
-    height: 100%;
-    display: table;
-    width: 100%;
   }
 }
 @media (min-width: 768px) {
