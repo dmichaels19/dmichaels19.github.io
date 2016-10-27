@@ -202,8 +202,9 @@ a:focus {
 .content-section h4,
 .content-section h5,
 .content-section h6 {
-  font-size: 40px;
+  font-size: 36px;
   color: black;
+  text-align: center;
 }
 @media (max-width: 767px) {
   .content-section {
@@ -228,6 +229,9 @@ a:focus {
   }
   .content-body p {
     text-align: left;
+  }
+  .content-body h1 {
+    text-align: center;
   }
 }
 .white-section {
