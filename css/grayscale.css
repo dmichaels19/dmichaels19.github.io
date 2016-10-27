@@ -281,11 +281,14 @@ a:focus {
   background-color: transparent;
 }
 .black-section {
-  background-color: #111111;
+  background-color: #222222;
   color: #DDDDDD;
 }
 .black-section h2 {
   color: white;
+}
+.black-section .bluelink {
+  color: #3b5998;
 }
 .black-section a {
   color: #F47321;
