@@ -147,6 +147,11 @@ a:focus {
 .intro .intro-body .brand-heading {
   font-size: 65px;
 }
+@media (max-width: 767px) {
+  .intro {
+    height: 100%;
+  }
+}
 @media (min-width: 768px) {
   .intro {
     height: 100%;
@@ -317,13 +322,6 @@ a:focus {
   .download-section {
     padding: 100px 0;
   }
-  #map {
-    height: 400px;
-    margin-top: 250px;
-  }
-}
-@media (max-width: 767px) {
-  height: 100%;
 }
 .persondiv {
   height: 340px;
