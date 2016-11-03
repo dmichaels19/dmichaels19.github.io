@@ -526,8 +526,3 @@ footer {
 .front {
   margin-top: -75px;
 }
-@media (max-width: 767px) {
-  p {
-    text-align: center;
-  }
-}
