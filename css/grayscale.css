@@ -163,8 +163,7 @@ a:focus {
 }
 .intro-rockets {
   height: 40%;
-  background: url("../img/team.jpg") center no-repeat;
-  margin-top: 30px;
+  background: url("../img/rocketcanescover.gif") center no-repeat;
 }
 @media (min-width: 768px) {
   .intro-rockets {
@@ -523,6 +522,20 @@ footer {
     height: 100%;
   }
 }
+.photo {
+  width: 100%;
+  height: 100%;
+}
 .front {
   margin-top: -75px;
+}
+@media (max-width: 767px) {
+  p {
+    text-align: center;
+  }
+}
+@media (max-width: 580px) {
+  iframe {
+    width: 100%;
+  }
 }

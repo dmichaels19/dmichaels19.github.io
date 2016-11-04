@@ -27,12 +27,6 @@
     <!-- Theme CSS -->
     <link href="css/grayscale.min.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
 </head>
 
@@ -49,29 +43,29 @@
 
                     <ul class="nav navbar-nav">
                         <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                        <li class="hidden">
-                            <a href="#page-top"></a>
+                        <li>
+                            <a class="page-scroll" href="index.html">UM AIAA</a>
                         </li>
-                        <li class="active">
+                        <li>
                             <a class="page-scroll" href="#page-top">Rockets</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="#planes">Planes</a>
+                            <a class="page-scroll" href="index.html#planes">Planes</a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a class="page-scroll" href="#space">Space</a>
+                        </li> -->
+                        <li>
+                            <a class="page-scroll" href="index.html#astronomy">Astronomy</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="#exoplanets">Exoplanets</a>
+                            <a class="page-scroll" href="index.html#donate">Donate</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="#donate">Donate</a>
+                            <a class="page-scroll" href="index.html#team">Team</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="#team">Team</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#contact">Contact</a>
+                            <a class="page-scroll" href="index.html#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -194,8 +188,8 @@
             </div>
             <div class="row text-center">
               <h4>The Rocket</h4>
-              <div class="col-xs-12">
-                <img id="rocket-photo" src="img/rocket.png">
+              <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+                <img id="rocket-photo" class="photo" src="img/rocket.jpg">
               </div>
               <div class="col-xs-5 col-sm-2 col-xs-offset-1 col-sm-offset-2">
                 <h4>Body</h4>
@@ -222,20 +216,39 @@
             <div class="row text-center">
               <div class="col-sm-8 col-sm-offset-2">
                 <h4>Aluminum Angel</h4>
-              <p>The Aluminum Angel was our in-house made-from-scratch static testing
+                <p>The Aluminum Angel was our in-house made-from-scratch static testing
                 rig, and the first complete product we created as a rocket team.
-                Check out these videos of static tests using the Aluminum Angel,
-                in which we melted some asphalt!<br />
-              </p>
+                Check out the static test videos using the Aluminum Angel! We melt
+                some asphalt!
+                </p>
+                <img class="photo" src="img/alangel.jpg">
+                <br />
+                <br />
+              </div>
             </div>
-              <video width="320" height="240" controls>
+            <div class="row text-center">
+              <h1>Videos</h1>
+              <!-- <video width="320" height="240" controls>
                 <source src="video/static-test.mp4" type="video/mp4">
               Your browser does not support the video tag.
               </video>
               <video width="320" height="240" controls>
                 <source src="video/static-test-slo-mo.mp4" type="video/mp4">
               Your browser does not support the video tag.
-              </video>
+              </video> -->
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/zRMmJLAROHQ" frameborder="0" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/EYPOh8e4Kko" frameborder="0" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/OTjPIBnVjiY" frameborder="0" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/mGY4v8ePHGU" frameborder="0" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/invr7Mw8Ty8" frameborder="0" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/9Q4tvk_vaHg" frameborder="0" allowfullscreen></iframe>
+
+              <br /><br /><br /><h2>Check us out on YouTube!</h2>
+              <ul class="list-inline banner-social-buttons text-center">
+              <li>
+                  <a href="https://www.youtube.com/channel/UCUv4ETF6xoheGq7n23iswtw" class="btn btn-default btn-lg"><i class="fa fa-youtube fa-fw"></i> <span class="network-name">YouTube</span></a>
+              </li>
+            </ul>
             </div>
 
             <!-- <div class="row">
