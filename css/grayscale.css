@@ -539,3 +539,8 @@ footer {
     width: 100%;
   }
 }
+@media (max-width: 450px) {
+  .members {
+    margin-bottom: 100px;
+  }
+}
