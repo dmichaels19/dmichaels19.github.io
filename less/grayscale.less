@@ -248,7 +248,57 @@ a {
 }
 
 .intro-cdr {
-    background: @miami_orange;
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding: 100px 0;
+  text-align: center;
+  color: white;
+  background: @miami_orange;
+  //background-color: @bg_grey;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  .intro-body {
+    p {
+      font-size:24px;
+
+
+    }
+      display: table-cell;
+      vertical-align: middle;
+      // .intro-text {
+      //     font-size: 18px;
+      // }
+      .brand-heading {
+          font-size: 125px;
+          color:white;
+      }
+  }
+  @media(max-width:767px) {
+    height: 100%;
+    .small {
+      font-size: 20px;
+      color:white;
+    }
+  }
+  @media(min-width:768px) {
+      height: 100%;
+      padding: 0;
+      .intro-body {
+          .brand-heading {
+              font-size: 125px;
+              .small {
+                font-size: 40px;
+                color:white;
+              }
+          }
+          // .intro-text {
+          //     font-size: 26px;
+          // }
+      }
+  }
 }
 // .btn-circle {
 //     width: 70px;
