@@ -207,6 +207,11 @@ a {
     background-size: cover;
     -o-background-size: cover;
     .intro-body {
+      p {
+        font-size:24px;
+
+
+      }
         display: table-cell;
         vertical-align: middle;
         // .intro-text {
@@ -240,6 +245,10 @@ a {
             // }
         }
     }
+}
+
+.intro-cdr {
+    background: @miami_orange;
 }
 // .btn-circle {
 //     width: 70px;
@@ -700,4 +709,13 @@ blockquote {
     text-align:left;
     }
   }
+}
+
+.cdr-heading {
+  @media(min-width:768px){
+    font-size:56px;
+}
+  @media(max-width:767px){
+    font-size:66px;
+}
 }

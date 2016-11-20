@@ -190,6 +190,9 @@ a:focus {
   display: table-cell;
   vertical-align: middle;
 }
+.intro .intro-body p {
+  font-size: 24px;
+}
 .intro .intro-body .brand-heading {
   font-size: 125px;
   color: white;
@@ -215,6 +218,9 @@ a:focus {
     font-size: 40px;
     color: white;
   }
+}
+.intro-cdr {
+  background: #F47321;
 }
 @-webkit-keyframes pulse {
   0% {
@@ -550,5 +556,15 @@ blockquote {
 @media (max-width: 767px) {
   blockquote p {
     text-align: left;
+  }
+}
+@media (min-width: 768px) {
+  .cdr-heading {
+    font-size: 56px;
+  }
+}
+@media (max-width: 767px) {
+  .cdr-heading {
+    font-size: 66px;
   }
 }
