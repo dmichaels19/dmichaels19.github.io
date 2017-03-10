@@ -622,6 +622,11 @@ blockquote {
 #tt {
   width: 400px;
 }
+@media (max-width: 767px) {
+  #tt {
+    width: 80%;
+  }
+}
 #ttlogo {
   width: 50px;
   height: 50px;
