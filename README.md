@@ -4,9 +4,9 @@
 
 ## Featuring:
 
-*Rocket Canes
-*Design Build Fly Team
-*Astronomy Club
-*Space Club
+* Rocket Canes
+* Design Build Fly Team
+* Astronomy Club
+* Space Club
 
 Maintained by University of Miami AIAA Webmaster **Devin Michaels**
